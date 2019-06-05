@@ -1,0 +1,13 @@
+README.md
+setup.py
+dppPackage1/ListaZakupow.py
+dppPackage1/Osoba.py
+dppPackage1/Produkt.py
+dppPackage1/Status.py
+dppPackage1/Uroczystosc.py
+dppPackage1/__init__.py
+dppPackage1/main.py
+dppPackage1.egg-info/PKG-INFO
+dppPackage1.egg-info/SOURCES.txt
+dppPackage1.egg-info/dependency_links.txt
+dppPackage1.egg-info/top_level.txt
