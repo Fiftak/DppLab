@@ -1,5 +1,4 @@
 from array import array
-import numpy as np
 from Aplikacja.Produkt import Produkt
 from Aplikacja.Uroczystosc import Uroczystosc
 
