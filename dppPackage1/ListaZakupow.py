@@ -48,6 +48,12 @@ class ListaZakupow():
             self.products.append(Produkt("Owoce", (0.5 + 0.2 * self.toddlers + 0.35 * self.kids + 0.40 * self.adults),(0.5 + 0.2 * self.toddlers + 0.35 * self.kids + 0.40 * self.adults) * 4.99));
             self.products.append(Produkt("Cola", (int)(1 + self.kids * 0.4 + 0.3 * self.adults), (int)(1 + self.kids * 0.4 + 0.3 * self.adults) * 5.00));
             self.products.append(Produkt("Sok pomaranczowy", (int)(1 + self.toddlers * 0.3 + 0.2 * self.adults),(int)(1 + self.toddlers * 0.3 + 0.2 * self.adults * 6.12)));
+        elif self.event==Uroczystosc.Impreza_Domowa:
+            self.products.append(Produkt("Jajka", (int)(0.5 * self.toddlers + self.kids + 1.5 * self.adults + 2),(int)(0.5 * self.toddlers + self.kids + 1.5 * self.adults + 2) * 0.89));
+            self.products.append(Produkt("Chleb", (int)(1 + 0.15 * self.adults + (self.kids + self.toddlers) * 0.10),(int)(1 + 0.15 * self.adults + (self.kids + self.toddlers) * 0.10) * 3.38));
+            self.products.append(Produkt("Cebula", (0.1 + self.toddlers * 0.15 + 0.18 * self.kids + 0.23 * self.adults),(0.1 + self.toddlers * 0.15 + 0.18 * self.kids + 0.23 * self.adults) * 3.23));
+            self.products.append(Produkt("Pomidor", (0.25 + self.toddlers * 0.1 + 0.2 * self.kids + 0.3 * self.adults),(0.25 + self.toddlers * 0.1 + 0.2 * self.kids + 0.3 * self.adults) * 2.18));
+            self.products.append(Produkt("Boczek", (0.28 + self.toddlers * 0.10 + 0.18 * self.kids + 0.21 * self.adults),(0.28 + self.toddlers * 0.10 + 0.18 * self.kids + 0.21 * self.adults) * 6.74));
 
     def addProductToCatalog(self,data):
         self.avaiableProducts.append(data)
@@ -62,7 +68,7 @@ class ListaZakupow():
             product.printProduct()
 
     def readProductsFromFile(self,path):
-        file = open("../produkty.txt",'r')
+        file = open(path,'r')
         #file.write("aaaaa1213131")
         i=0;
         name=None
