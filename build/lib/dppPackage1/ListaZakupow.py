@@ -1,6 +1,6 @@
 from array import array
-from Aplikacja.Produkt import Produkt
-from Aplikacja.Uroczystosc import Uroczystosc
+from dppPackage1.Produkt import Produkt
+from dppPackage1.Uroczystosc import Uroczystosc
 
 def printFileName():
     print("PurchaseList")
