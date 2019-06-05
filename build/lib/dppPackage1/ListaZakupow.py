@@ -67,6 +67,7 @@ class ListaZakupow():
             product.printProduct()
 
     def readProductsFromFile(self,path):
+        print("NOWA WERSJA")
         file = open(path,'r')
         #file.write("aaaaa1213131")
         i=0;
