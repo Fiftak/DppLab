@@ -1,5 +1,4 @@
 from array import array
-import numpy as np
 from dppPackage1.Produkt import Produkt
 from dppPackage1.Uroczystosc import Uroczystosc
 
