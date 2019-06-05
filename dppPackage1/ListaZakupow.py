@@ -67,27 +67,3 @@ class ListaZakupow():
         for product in self.avaiableProducts:
             product.printProduct()
 
-    def readProductsFromFile(self,path):
-        file = open(path,'r')
-        #file.write("aaaaa1213131")
-        i=0;
-        name=None
-        value=1
-        weight=1
-        for x in file:
-            i = i + 1
-            print(x)
-            if(i %4==1):
-                print(i)
-                print("name "+x)
-                name=x
-            elif i%4==3:
-                print(i)
-                print("value " + x)
-                value=x
-        if (value!=1 and name!=None):
-            produkt=Produkt(name,weight,value)
-            self.avaiableProducts.append(produkt)
-            value=1
-            name=None
-        file.close()
